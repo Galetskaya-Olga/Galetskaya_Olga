@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS02 Basic1</title>
+    <style type="text/css">
+    .card{
+        width: 140px;
+        height: 190px; /*Размер карт */
+        background: url('cards.7e0a18f0.png') no-repeat; /* Спрайт */
+        display: inline-block; /* Выстраиваем по горизонтали */
+        background-position: 0px 0px; /* Сдвигаем вправо */
+        }
+    .card2{
+        width: 150px;
+        height: 190px;
+        background: url('cards.7e0a18f0.png') no-repeat;
+        display: inline-block;
+        background-position: -139px -1790px;
+        }
+    .card3{
+        width: 148px;
+        height: 190px;
+        background: url('cards.7e0a18f0.png') no-repeat;
+        display: inline-block;
+        background-position: -285px -1390px;
+        }
+    .card4{
+        width: 150px;
+        height: 190px;
+        background: url('cards.7e0a18f0.png') no-repeat;
+        display: inline-block;
+        background-position: -140px -2186px;
+        } 
+    .card5{
+        width: 150px;
+        height: 190px;
+        background: url('cards.7e0a18f0.png') no-repeat;
+        display: inline-block;
+        background-position: -290px -2385px;
+        }     
+    .card6{
+        width: 139px;
+        height: 190px;
+        background: url('cards.7e0a18f0.png') no-repeat;
+        position: relative;
+        top: 50px;
+        left:50px;
+        z-index: 5;
+        }     
+    .card7{
+        width: 139px;
+        height: 190px;
+        background: url('cards.7e0a18f0.png') no-repeat;
+        background-position: -139px -1790px;
+        position: relative;
+        left:100px;
+        top:-50px;
+        z-index: 4;
+        }        
+    .card8{
+        width: 139px;
+        height: 190px;
+        background: url('cards.7e0a18f0.png') no-repeat;
+        background-position:  -285px -1390px;
+        position: relative;
+        left:150px;
+        top:-150px;
+        z-index: 3;
+        }
+    .card9{
+        width: 139px;
+        height: 190px;
+        background: url('cards.7e0a18f0.png') no-repeat;
+        background-position:  -140px -2186px;
+        position: relative;
+        left:200px;
+        top:-250px;
+        z-index: 2;
+        }
+    .card10{
+        width: 139px;
+        height: 190px;
+        background: url('cards.7e0a18f0.png') no-repeat;
+        background-position:  -290px -2386px;
+        position: relative;
+        left:250px;
+        top:-350px;
+        z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class = "card" ></div>
+        <div class = "card2"></div>
+        <div class = "card3"></div>
+        <div class = "card4"></div>
+        <div class = "card5"></div>
+    </div>
+    <div>
+        <div class = "card6" ></div>
+        <div class = "card7"></div>
+        <div class = "card8"></div>
+        <div class = "card9"></div>
+        <div class = "card10"></div>
+    </div>
+    
+</body>
+</html>

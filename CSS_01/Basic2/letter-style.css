@@ -1,0 +1,30 @@
+body 
+    {
+       font-family: 'Comfortaa', sans-serif;
+       width: 90%;
+       
+    }
+.article
+    {
+        font-size: 20px;
+        color: rgb(204, 15, 169);
+    }
+.h1
+    {
+        font-style: italic;
+        font-weight: bolder;
+        width: 50%;
+        background-color: rgb(245, 191, 191); 
+        text-shadow: lightgrey 1mm 1mm 1px    
+    }
+.adress
+    {
+        font-display: initial;
+        font-style: italic;
+    }    
+#name
+    {
+        font-size: 10px;
+        font-style: oblique;
+    }
+   

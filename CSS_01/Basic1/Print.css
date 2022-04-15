@@ -1,0 +1,12 @@
+body
+    {
+    font-family: sans-serif;
+    font-size: 14px;
+    background-color: rgb(245, 191, 191);
+    }
+#bigtext 
+    {font-size: large } 
+div h1
+    {background-color: #a2ff005b } 
+div h2
+    {background-color: #1aee2c5b }    

@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic3</title>
+    <title>CSS-02-Add2</title>
     <style>
         .content-wrap {
             background-color: navajowhite;
+            display: flex;
+            
+                    
         }
         .menu {
-            width: 15em;
+            width: 20em;
             background-color: antiquewhite;
-            float: left;
-            font-size: 16px;
-            
+            /*align-items: flex-start;*/
+            flex-basis: 20em;
+        }
+        .container{
+            /*display: flex;*/
+            flex-direction: column;
         }
         
         .st {
             background-color:bisque;
             margin-bottom: 1em;
-            margin-left:15em;
             padding: 0.5em;
+                        
         }
         .st1img {
             float: right;
@@ -30,13 +36,10 @@
             margin: 7px 7px 7px 7px; /* Отступы вокруг картинки */
         }
         .st2img {
-            float:right;
+            float: right;
+           
         }
-        h2 {
-            text-align: center;
-            color: rgb(162, 97, 7);
-            font-weight: bold
-        }
+        
         .R{
             clear: both;
         }
@@ -46,12 +49,13 @@
             font-size: medium;
             font-style: italic;
             clear: both;
+            /*display: flex;*/
         }
     </style>
 </head>
 <body>
     <div class="content-wrap">
-    <div class="menu">
+        <div class="menu">
         <h2>Варианты блюд на ужин</h2>
         <ul>
             <li>Салат Цезарь классический с курицей</li>
@@ -64,11 +68,11 @@
 
         </ul>
     </div>
-    <div>
+    <div class="container">
     <div class="st">
         <h2>Рецепт приготовления</h2>
         <h3>Салат Цезарь классический с курицей</h3>
-        <img src="salat-tsezar.jpg" class="st1img" alt="img">
+        <img src="../salat-tsezar.jpg" class="st1img" alt="img">
         <h4>Ингредиенты</h4>
         <ol>
             <li>Салат айсберг - 30 г</li>                
@@ -87,13 +91,13 @@
             Далее салат моем и рвем руками на куски. Жарим или специально сушим сухарики для салата.Можно купить готовые сухарики.
             Курицу обжариваем на сковородке 15 минут и нарезаем тонуими пластинками. 
             Яйцо нарезаем на дольки.Выкладываем салат на тарелку, поливаем оливковым маслом.
-        <img src="icon_mail.png" class="st2img">
+        <img src="../icon_mail.png" class="st2img">
         <div style="clear:both"></div>
     </div>
     <div class="R"></div>
     </div>
     </div>
-        <div class="podval">
+<div class="podval">
             Из существующих легенд происхождения салата мне нравится та, в которой американский повар с итальянским именем Цезарь Кардини 
             был поставлен перед задачей срочно сообразить закусон, а кроме хрустящих листьев салата ромэн, багета и яиц, которые бы он все
              равно не успел бы сварить, у него ничего не было в наличии. Повар не растерялся и перемешал салатные листья с яйцом, сбрызнул

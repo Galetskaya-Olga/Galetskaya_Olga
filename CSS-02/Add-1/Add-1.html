@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame</title>
+    <style>
+        body{
+            display: block;
+            margin: 8px;
+        }
+        .frame1{
+            width:80%;
+            padding: 3em;
+            background-color: rgb(195, 170, 140);
+            background-image:
+            url('ramka2/b-r.gif'),
+            url('ramka2/b-l.gif'), 
+            url('ramka2/t-l.gif'),
+            url('ramka2/t-r.gif'),
+            url('ramka2/l.gif'),
+            url('ramka2/r.gif'),
+            url('ramka2/t.gif'),
+            url('ramka2/b.gif');
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-y, repeat-x, repeat-x;
+            background-position: bottom right, bottom left, top left, top right, left, right, top, bottom;
+            margin-bottom: 60px;
+        }
+        .frame2{
+            background: 
+  			url('ramka2/t-l.gif') no-repeat top left,
+  			url('ramka2/t-r.gif') no-repeat top right,
+  			url('ramka2/b-l.gif') no-repeat bottom left,
+  			url('ramka2/b-r.gif') no-repeat bottom right,
+  			url('ramka2/l.gif') repeat-y left,  
+  			url('ramka2/t.gif') repeat-x top, 
+  			url('ramka2/r.gif') repeat-y right, 
+  			url('ramka2/b.gif') repeat-x bottom;
+  			width:80%; padding:2.5em;
+            margin-bottom: 60px;
+        }
+        .frame3{
+            border-style:solid;
+            border-width: 2.5em;
+            width:80%;
+    		border-image-source: url('ramka4.png') ;
+    		border-image-slice: 100;
+    		border-image-repeat: stretch; 
+    		border-image-width: 2;
+            margin-bottom: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame1" name="frame1">
+                <h2>РАМКА №1</h2>
+                Создать проект DIV_FRAME. Добавить в проект из библиотеки картинку ramka.png.
+                Разрезать ramka.png и сверстать резиновый фон, какой приведён ниже.
+                Текст можно использовать любой, но без жёстких переносов строк, чтобы мог растягиваться на произвольную ширину.
+                Размеры рамки должны зависеть от количества текста в ней и от размеров окна браузера (т.е. рамка по ширине — на всю ширину окна браузера, и имеет такую высоту, чтобы вместить содержащийся в ней текст).
+    </div>
+    <div  class="frame2" name="frame2" >
+   	   			<h2>РАМКА №2</h2>
+	   			Создать проект DIV_FRAME. Добавить в проект из библиотеки картинку ramka.png. 
+				Разрезать ramka.png и сверстать резиновый фон, какой приведён ниже.<br> 
+				Текст можно использовать любой, но без жёстких переносов строк, чтобы мог растягиваться на произвольную ширину. <br>
+				Размеры рамки должны зависеть от количества текста в ней и от размеров окна браузера (т.е. рамка по ширине — на всю ширину окна браузера, и имеет такую высоту, чтобы вместить содержащийся в ней текст).
+	</div>
+    <div class="frame3" name="frame3">
+   	
+	   			<h2>РАМКА №3</h2>
+	   			Создать проект DIV_FRAME. Добавить в проект из библиотеки картинку ramka.png. 
+				Разрезать ramka.png и сверстать резиновый фон, какой приведён ниже.<br> 
+				Текст можно использовать любой, но без жёстких переносов строк, чтобы мог растягиваться на произвольную ширину. <br>
+				Размеры рамки должны зависеть от количества текста в ней и от размеров окна браузера (т.е. рамка по ширине — на всю ширину окна браузера, и имеет такую высоту, чтобы вместить содержащийся в ней текст).
+	</div>
+    <div name="frame4" style="width:80%; background: url('img/l.png') repeat-y left">
+        <div style="background: url('img/t.png') repeat-x top">
+            <div style="background: url('img/r.png') repeat-y right">
+                <div style="background: url('img/b.png') repeat-x bottom">
+                    <div style="background: url('img/l-t.png') no-repeat top left">
+                        <div style="background: url('img/r-t.png') no-repeat top right">
+                            <div style="background: url('img/l-b.png') no-repeat bottom left">
+                                <div style="background: url('img/r-b.png') no-repeat bottom right">
+                                    <div style=" padding:2.5em">
+                                    <h2>РАМКА №4</h2>
+                                    Создать проект DIV_FRAME. Добавить в проект из библиотеки картинку ramka.png. 
+                                    Разрезать ramka.png и сверстать резиновый фон, какой приведён ниже.<br> 
+                                    Текст можно использовать любой, но без жёстких переносов строк, чтобы мог растягиваться на произвольную ширину. <br>
+                                    Размеры рамки должны зависеть от количества текста в ней и от размеров окна браузера (т.е. рамка по ширине — на всю ширину окна браузера, и имеет такую высоту, чтобы вместить содержащийся в ней текст).
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+<br> 
+</body>
+</html>

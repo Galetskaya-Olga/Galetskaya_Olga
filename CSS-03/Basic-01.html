@@ -8,8 +8,7 @@
     <style>
         div.MenuLevel1 {
             width: 1000px;
-            display: inline-flex;
-            flex-direction: row;
+            float: left;
         }
         div.MenuLevel1 > div {
             width: 100px;
@@ -38,11 +37,7 @@
         @media all and (max-width:600px)
         {
             div.Menulevel1{
-                /*display: flex;
-                flex-direction: column*/
-                flex: none;
-                display: grid;
-                /*display: block;*/
+                float: none;
                 width: 100px;
             }
             div.Menulevel1 > div{

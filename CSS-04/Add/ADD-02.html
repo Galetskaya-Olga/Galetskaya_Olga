@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-04-ADD-2</title>
+    <style>
+
+        table{
+            counter-reset: box 65; /* Инициируем счетчик */
+            width: 650px;
+            height: 650px;
+            border: 10px solid black;
+            text-align: center;
+        }
+        td::before{
+            counter-increment: box -1; /* Указываем идентификатор счетчика */
+            content: counter(box);  /* Выводим текст перед содержимым тега <td> */
+        }
+        td{
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            font-size: 40px;
+        }
+        tr:nth-child(odd) td:nth-child(even){
+            background-color: black;
+            font-size: 40px;
+            color: white;
+            
+        }
+        tr:nth-child(even) td:nth-child(odd){
+            background-color: black;
+            font-size: 40px;
+            color: white;
+            
+        }
+    </style>
+</head>
+
+<body>
+<table>
+    <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>    
+</table>    
+</body>
+</html>

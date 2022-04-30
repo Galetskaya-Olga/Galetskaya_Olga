@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery-add</title>
+    <style>
+        div{
+            border-width: 1px;
+        }
+        #Pass{
+            background-color: lightgrey;
+        }
+        #Pass2{
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <form name = "form"  action = "http://fe.it-academy.by/TestForm.php" method="GET" target="_blank">
+        <title>Проверка пароля</title>
+        <div>
+        <fieldset><legend>Проверка пароля</legend>
+            
+            <label><input type="password" name="pass" ID="Pass" placeholder="введите пароль">*Пароль</label><br>
+            <br>
+            <label><input type="password" name="pass2" ID="Pass2" placeholder="повторите пароль"> *Повторите пароль</label><br>
+            <br>
+            <label><input type = "submit" ID="Submit" value = "Отправить"></label>
+        </fieldset>
+        </div>
+    </form> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+    </script>
+    <script>
+    $(document).ready(function($){
+        $("#Pass2").on("keyup", function() { // Выполняем скрипт при изменении содержимого 2-го поля
+
+            var value_input1 = $("#Pass").val(); // Получаем содержимое 1-го поля
+            var value_input2 = $(this).val(); // Получаем содержимое 2-го поля
+    
+    if(value_input1 != value_input2) { // Условие, если поля не совпадают
+        $("#Pass, #Pass2").css("backgroundColor", "red"); //Цвет ячеек красный
+        $("#Submit").attr("disabled", "disabled"); // Запрещаем отправку формы
+    }
+    else { // Условие, если поля совпадают
+        $("#Pass, #Pass2").css("backgroundColor", "green"); //Цвет ячеек зелены
+        $("#Submit").removeAttr("disabled");  // Разрешаем отправку формы
+    }
+    })
+})
+    </script>
+        
+</body>
+</html>
